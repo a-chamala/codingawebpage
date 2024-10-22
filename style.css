@@ -1,5 +1,5 @@
 @charset "UTF-8";
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Nunito Sans", system-ui;
     font-optical-sizing: auto;
     font-weight: 800;
@@ -7,29 +7,46 @@ h1, h2, h3, h4, h5 {
     font-variation-settings: "wdth" 100,
     "YTLC" 500;
     color: #6B3F88;
-    margin-right: 10%
+
 		}
 h1 {
 	font-size: 310%;
 	margin-bottom: 0%;
-}
-h3 {
-	font-size: 180%;
-	padding-top: 1%;
-	padding-bottom: 0%;
+	margin-right: 10%;
 }
 
 h2 {
-	font-size: 140%;
+	font-size: 150%;
 	padding-top: 3%;
 	padding-bottom: 2%;
 }
-h2, h3 {
+h5 {
+	font-size: 90%;
+	margin-bottom: 0%;
+}
+h6 {
+	font-size: 80%;
+	margin-bottom: 2%;
+}
+h4 {
+	font-size: 130%;
+}
+h2, h3, h4 {
 	text-align: center;
 	/*display: flex;
 	justify-content: center;
 	align-items: center;*/
 	padding-top: 2%;
+}
+h3 {
+	font-size: 240%;
+	/*background-color: #F3E2AE;*/
+	
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	justify-content: center;
+	
 }
 
 body {
@@ -41,21 +58,27 @@ body {
 	margin: 0%;
     background-color: #EAEAEC;
     color: #44064F;
-	font-size: 130%;
+	font-size: 150%;
 
 		}
 section {
 	margin-left: 20%;
 	margin-right: 20%;
 	padding-top: 2%;
-	text-indent: 20px;
+	margin-bottom: 5%;
 	
 }
+
 .rightAlign {
 	float: right;
 	}
 .leftAlign {
 	float: left;
+}
+p {
+	text-indent: 30px;
+	margin-left: 12%;
+	margin-right: 12%;
 }
 a {
 	color: #7870F2;
@@ -68,9 +91,10 @@ a:hover {
 footer {
 	background-color: #C7BAD9;
 	padding-top: 30px;
-	padding-left: 8%;
-	padding-right: 8%;
+	padding-left: 15%;
+	padding-right: 15%;
 	padding-bottom: 2%;
+	text-indent: -20px;
 	
 }
 
@@ -80,29 +104,38 @@ header {
 	padding-right: 10%;
 	padding-top: 3%;
 	padding-bottom: 2%;
-	background-color: #F4E2AE;
-
-	
+	background-color: #F4E2AE;	
+}
+li {
+	padding-bottom: 2%;
+}
+span {
+	background-color: #F3E2AE;
+	padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 .button a {
-    background-color: #EED790;
-    color: #7870F2;
+    background-color: #6B3F88;
+    color: #F3E2AE;
     padding-right: 15px;
     padding-left: 15px;
     padding-bottom: 10px;
     padding-top: 10px;
     border-radius: 5px;
-	text-indent: 0px;
+	
 }
 .button a:hover {
-    background-color: #805F19;
-    color: #E8E6FC
+    background-color: #F3E2AE;
+    color: #6B3F88
 }
 .center {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	padding-top: 2%;
+
 }
 .centerImage {
 	display: block;
