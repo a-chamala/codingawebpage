@@ -9,10 +9,48 @@ h1, h2, h3, h4, h5, h6 {
     color: #6B3F88;
 
 		}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #6B3F88;
+  position: fixed;
+	top: 0;
+	width: 100%;
+	padding-top: 0%;
+	z-index: 1000;
+}
+
+ul.topnav li {float: left; width: 25%;}
+
+ul.topnav li a {
+  display: block;
+  color: #F4E2AE;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+	
+	
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #44064F;}
+
+ul.topnav li a.active {background-color: #7870F2;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
 h1 {
 	font-size: 310%;
 	margin-bottom: 0%;
-	margin-right: 10%;
+	margin-right: 5%;
+	margin-left: 10%;
 }
 
 h2 {
@@ -20,6 +58,7 @@ h2 {
 	padding-top: 3%;
 	padding-bottom: 2%;
 }
+
 h5 {
 	font-size: 90%;
 	margin-bottom: 0%;
@@ -40,12 +79,9 @@ h2, h3, h4 {
 }
 h3 {
 	font-size: 240%;
-	/*background-color: #F3E2AE;*/
-	
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 10%;
+	margin-right: 10%;
 	text-align: center;
-	justify-content: center;
 	
 }
 
@@ -69,6 +105,18 @@ section {
 	
 }
 
+ul.principles {
+    text-align: center;
+    list-style-type:none;
+    font-size: 150%;
+    justify-content: center;
+    list-style-position: inside;	
+}
+ul.principles li {
+	padding-bottom: 30px;
+	font-weight: 600;
+}
+
 .rightAlign {
 	float: right;
 	}
@@ -86,7 +134,7 @@ a {
 	text-decoration: none;
 }
 a:hover {
-    color: #0C4C9C
+    color: #0C4C9C;
 }
 footer {
 	background-color: #C7BAD9;
@@ -106,7 +154,10 @@ header {
 	padding-bottom: 2%;
 	background-color: #F4E2AE;	
 }
-li {
+header h5, h6 {
+	margin-left: 10%;
+}
+.bulletSpacing {
 	padding-bottom: 2%;
 }
 span {
@@ -124,6 +175,12 @@ span {
     padding-bottom: 10px;
     padding-top: 10px;
     border-radius: 5px;
+	font-family: "Nunito Sans", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "wdth" 100,
+    "YTLC" 500;
 	
 }
 .button a:hover {
@@ -153,4 +210,66 @@ span {
 	display: block;
 	float: right;
 	margin-left: 10%;
+}
+.navBar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.ImgTextSpace {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 27%;
+	margin-right: 35%;
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+
+.rightText {
+	text-align: left;
+	margin-left: 0px;
+}
+
+.aboutMe {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+
+.aboutMeImg {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin-right: 15%
+}
+
+.aboutMeText  {
+	
+	position: relative;
+	margin-right: 0%;
+	margin-left: 15%;
+	margin-top: 10%;
+	text-align: left;
+	float: left;
+	/*background-color: blue
+	*/
+}
+
+.aboutMeText h4 {
+	
+	font-size: 220%;
+	margin: 0;
+
+	
+	
+}
+
+.aboutMeText h5 {
+	
+	font-size: 140%;
+	margin: 0;
+	margin-top: 25px;
+
 }
